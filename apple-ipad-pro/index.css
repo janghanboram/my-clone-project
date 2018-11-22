@@ -1,0 +1,79 @@
+body {
+    background: #fafafa;
+    margin: 0;
+    font-size: 40px;
+    line-height: .95556;
+    font-weight: 600;
+    letter-spacing: -.015em;
+    font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif
+}
+
+.video {
+    width: 600px;
+}
+
+h1 {
+    font-size: 90px;
+    line-height: .95556;
+    font-weight: 600;
+}
+
+.scroll-wrapper {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.scroll-container {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    height: 100vh;
+}
+
+.scroll-section {
+    display: flex;
+    align-items: center;
+}
+
+.scroll-image {
+    min-width: 100vw;
+    height: 480px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-img {
+    max-width: 775px;
+    width: 96.875vh;
+}
+
+.hero-title {
+    min-width: 600px;
+    padding-right: 180px;
+    opacity: 0;
+    transform: translate(180px, 0);
+    transition: 1s opacity, 1s transform;
+}
+
+.fade-in {
+    opacity: 1;
+    transform: translate(-180px, 0);
+}
+
+.hero-description {
+    min-width: 720px;
+    padding-right: 120px;
+    margin-left: -260px;
+    z-index: 2;
+}
+
+.section-screen .hero-img{
+    max-width: 500px;
+}
+
+.section-screen .video{
+    width: auto;
+}
